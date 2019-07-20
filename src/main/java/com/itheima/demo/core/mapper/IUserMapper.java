@@ -10,7 +10,7 @@ import java.util.Map;
  * @Date: 2019/2/27 23:03
  * @Desc:
  */
-public interface UserMapper {
+public interface IUserMapper {
 
     public Map<String,Object> queryUser();
 

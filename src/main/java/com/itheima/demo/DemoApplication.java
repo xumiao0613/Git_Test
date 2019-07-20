@@ -14,4 +14,17 @@ public class DemoApplication {
         SpringApplication.run(DemoApplication.class, args);
     }
 
+    /**
+     * @desc 解决跨域问题
+     * @return
+     */
+//    @Bean
+//    public WebMvcConfigurer corsConfigurer() {
+//        return new WebMvcConfigurer() {
+//            @Override
+//            public void addCorsMappings(CorsRegistry registry) {
+//                registry.addMapping("/**");
+//            }
+//        };
+//    }
 }

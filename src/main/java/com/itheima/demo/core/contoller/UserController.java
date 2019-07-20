@@ -1,7 +1,6 @@
 package com.itheima.demo.core.contoller;
 
 import com.alibaba.fastjson.JSON;
-import com.itheima.demo.core.mapper.UserMapper;
 import com.itheima.demo.core.service.IUserService;
 import com.itheima.demo.core.vo.UserVO;
 import io.swagger.annotations.Api;
@@ -22,14 +21,16 @@ import java.util.Map;
  * @Desc:
  */
 @RestController
-@RequestMapping("/user")
-@Api(value = "User Controller", tags = {"用户Controller"})
+@RequestMapping("local/user")
+@Api(value = "用户Controller", tags = {"UserController"})
+//@CrossOrigin
 public class UserController {
 
     private static final Logger LOG = LoggerFactory.getLogger(UserController.class);
 
     @Autowired
     private IUserService userService;
+
     @GetMapping("/queryUser")
     @ApiOperation(value = "查询用户", notes = "查询用户")
     public Map<String,Object> queryUser(){

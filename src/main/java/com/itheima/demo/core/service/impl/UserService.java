@@ -1,6 +1,6 @@
 package com.itheima.demo.core.service.impl;
 
-import com.itheima.demo.core.mapper.UserMapper;
+import com.itheima.demo.core.mapper.IUserMapper;
 import com.itheima.demo.core.service.IUserService;
 import com.itheima.demo.core.vo.UserVO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,20 +18,20 @@ import java.util.Map;
 public class UserService implements IUserService {
 
     @Autowired
-    private UserMapper userMapper;
+    private IUserMapper iUserMapper;
 
     @Override
     public Map<String, Object> queryUser() {
-        return userMapper.queryUser();
+        return iUserMapper.queryUser();
     }
 
     @Override
     public int queryUserCount() {
-        return userMapper.queryUserCount();
+        return iUserMapper.queryUserCount();
     }
 
     @Override
     public List<UserVO> queryUserList() {
-        return userMapper.queryUserList();
+        return iUserMapper.queryUserList();
     }
 }
