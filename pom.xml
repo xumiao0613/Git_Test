@@ -18,7 +18,7 @@
         <java.version>1.8</java.version>
         <swagger.version>2.4.0</swagger.version>
         <mybatis-spring.version>2.0.0</mybatis-spring.version>
-        <fastjson.version>1.2.47</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <spring-test.verision>5.1.7.RELEASE</spring-test.verision>
     </properties>
 
